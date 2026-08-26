@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title optimizado con palabras clave principales -->
+    <title>Tienda Minecraft - LunarMC | Servidores Minecraft y Rangos</title>
+    
+    <!-- Meta description para posicionamiento SEO -->
+    <meta name="description" content="Entra a la tienda Minecraft oficial de LunarMC. Compra rangos VIP, extras exclusivos y mejora tu experiencia en nuestros servidores Minecraft al instante.">
+    
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="index-.css">
+</head>
+<body class="dark-mode">
+
+    <!-- Encabezado con estructura de tabla alineada a la derecha -->
+    <table class="header-table">
+        <tr>
+            <td class="col-spacer"></td>
+            
+            <td class="col-main">
+                <!-- H1 Principal con palabra clave primaria -->
+                <h1>Tienda Minecraft Oficial de LunarMC</h1>
+                <p class="clickable-ip" onclick="navigator.clipboard.writeText('lunarmc.cc'); alert('¡IP copiada al portapapeles!');">
+                    <strong>IP: lunarmc.cc (Haz clic para copiar)</strong>
+                </p>
+            </td>
+            
+            <!-- Botón de registro y Botón de Modo Oscuro/Claro -->
+            <td class="col-register">
+                <br>
+                <a href="registro.html">
+                    <button class="btn-register">
+                        <b>Regístrate 🔑</b>
+                    </button>
+                </a>
+                <br><br>
+                <!-- Ejercicio 6: Cambiar el tema de la página -->
+                <button id="toggle-theme-btn">☀️ Modo Claro</button>
+            </td>
+        </tr>
+    </table>
+
+    <main>
+        <!-- Ejercicio 3: Fecha y Hora en tiempo real -->
+        <div id="datetime-banner" class="datetime-banner">
+            Cargando fecha y hora...
+        </div>
+
+        <!-- DIV Contenedor principal del servidor -->
+        <div id="hero-server" class="hero-container">
+            <br>
+            <img src="imagen del servidor lunar.png" alt="Logotipo oficial del servidor de Minecraft LunarMC" width="300" height="300">
+            
+            <h2>El mejor contenido para Servidores Minecraft</h2>
+            
+            <!-- Ejercicio 2 & 7: Formulario con Validación y Resumen -->
+            <div id="login-box" class="login-container">
+                <details class="inline-details">
+                    <summary>
+                        <strong>Ingreso / Registro</strong><br>
+                        Haz clic para desplegar
+                    </summary>
+                    <br>
+                    <div class="login-inner-box">
+                        <form id="user-form" onsubmit="return false;">
+                            <label for="username-input">Introduce tu nick:</label><br>
+                            <input type="text" id="username-input" placeholder="Tu nombre en Minecraft"><br>
+                            <span id="username-error" class="error-message"></span><br>
+
+                            <label for="email-input">Correo Electrónico:</label><br>
+                            <input type="text" id="email-input" placeholder="ejemplo@correo.com"><br>
+                            <span id="email-error" class="error-message"></span><br>
+
+                            <button type="button" id="btn-submit-form">Enviar datos</button>
+                        </form>
+
+                        <!-- Ejercicio 7: Resumen antes de enviar -->
+                        <div id="form-summary" class="summary-box">
+                            <h4>Resumen de los datos:</h4>
+                            <p id="summary-username"></p>
+                            <p id="summary-email"></p>
+                            <button id="btn-confirm-send">Confirmar y Enviar</button>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <br><br>
+
+            <div id="discord-community">
+                <p>
+                    <strong>Servidor de discord</strong><br>
+                    <a href="https://discord.gg/BdbZcmjm" target="_blank" rel="noopener">haz clic aquí para unirte</a>
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- DIV Contenedor para el menú de navegación -->
+        <div id="main-nav" class="nav-container">
+            <details class="inline-details">
+                <summary class="nav-summary">
+                    Tridentbox
+                </summary>
+                <p>
+                    <a href="RANGOS.html">RANGOS</a> &nbsp;&nbsp; 
+                    <a href="EXTRAS.html">EXTRAS</a>
+                </p>
+            </details>
+            
+            <span class="nav-spacer"></span>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <span class="nav-spacer"></span>
+            <a href="Acerca de Nosotros.html" class="nav-link">Acerca de Nosotros</a>
+        </div>
+
+        <hr>
+
+        <!-- Ejercicio 4: Menú interactivo desplegable / Acordeón -->
+        <section class="faq-section">
+            <h3>Preguntas Frecuentes</h3>
+            <button class="accordion-btn">
+                ▶ ¿Cómo comprar un rango en el servidor?
+            </button>
+            <div class="accordion-content">
+                <p>Selecciona la categoría Tridentbox en el menú, elige el rango deseado y presiona comprar.</p>
+            </div>
+
+            <button class="accordion-btn">
+                ▶ ¿Cuánto tarda en llegar mi compra?
+            </button>
+            <div class="accordion-content">
+                <p>El proceso automático toma entre 1 y 20 minutos en reflejarse en el juego.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Ejercicio 5: Galería de imágenes interactiva -->
+        <section class="gallery-container">
+            <h3>Galería del Servidor</h3>
+            <div>
+                <img id="gallery-display" class="gallery-main-img" src="imagen del servidor lunar.png" alt="Imagen principal" width="400">
+            </div>
+            <div class="gallery-controls">
+                <button id="btn-prev-img">◀ Anterior</button>
+                <button id="btn-next-img">Siguiente ▶</button>
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="imagen del servidor lunar.png" class="thumb" alt="Miniatura 1">
+                <img src="miniatura 2 .png" class="thumb" alt="Miniatura 2">
+                <img src="miniatura 3.png" class="thumb" alt="Miniatura 3">
+            </div>
+        </section>
+
+        <hr>
+
+        <article>
+            <div class="content-block">
+                <h2>Bienvenido a la Tienda Minecraft de LunarMC Network</h2>
+                <p>Te damos la bienvenida al portal de compras oficial de la red <strong>LunarMC</strong>. Si estás buscando mejorar tu experiencia de juego, adquirir objetos exclusivos o desbloquear habilidades especiales en la modalidad <em>Tridentbox</em>, este es el lugar correcto. Nuestra <strong>tienda Minecraft</strong> está configurada para procesar tus solicitudes de manera automática, rápida y completamente segura.</p>
+
+                <p>En el amplio ecosistema de los <strong>servidores Minecraft</strong>, LunarMC destaca por ofrecer rendimiento fluido, protección contra trampas y una comunidad dinámica activa las 24 horas del día. Al adquirir cualquier paquete en nuestra plataforma, apoyas directamente la mantención de la infraestructura, la contratación de hosting de alta velocidad y el desarrollo continuo de nuevos eventos e innovaciones para la comunidad.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Rangos VIP y Beneficios Permanentes</h3>
+                <p>Todos los paquetes de rangos disponibles en la tienda de <strong>LunarMC</strong> son de pago único y acceso permanente. Al adquirir tu membresía VIP, obtendrás acceso instantáneo a comandos exclusivos, kits de equipamiento diarios, permisos de vuelo en áreas privadas y prioridad de acceso a las modalidades cuando los servidores se encuentren llenos.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Proceso de Entrega y Acreditación</h3>
+                <p>Para asegurar que tu paquete se acredite sin inconvenientes, verifica ingresar exactamente el mismo nombre de usuario (Nick) con el que juegas en la IP <code>lunarmc.cc</code>.</p>
+            </div>
+
+            <div id="monthly-goal" class="goal-container">
+                <p><strong>Meta Mensual: 0%</strong></p>
+            </div>
+
+            <div class="content-block">
+                <h3>Atención al Cliente y Soporte</h3>
+                <p>¿Tienes dudas antes de realizar tu compra o han transcurrido más de 20 minutos sin recibir tu paquete? Nuestro equipo de atención está disponible para asistirte en nuestro <a href="https://discord.gg/BdbZcmjm" target="_blank" rel="noopener">Servidor de Discord Oficial</a>.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Términos y Política de Reembolso</h3>
+                <p>Todas las compras realizadas en la <strong>tienda Minecraft</strong> de LunarMC son definitivas e irrestrictamente no reembolsables.</p>
+            </div>
+        </article>
+
+        <hr>
+
+        <section>
+            <div id="legal-info">
+                <h3>Aviso Legal y Contacto</h3>
+                <p><strong>Importante:</strong> LunarMC no está afiliado, asociado ni respaldado de ninguna manera por Mojang Studios o Microsoft Corporation.</p>
+                <p><strong>CONTACTO OFICIAL:</strong><br>
+                Correo: <code>lunarmc.ccnetwork@gmail.com</code></p>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer class="main-footer">
+        <div id="footer-content">
+            <p><strong>JEREMIAS PUCA</strong></p>
+            <p><strong>2026</strong></p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE JAVASCRIPT CON LA LÓGICA INTERACTIVA -->
+    <script>
+        // 1. Mostrar mensajes o alertas al cargar la página
+        window.addEventListener('DOMContentLoaded', function() {
+            let mensajeBienvenida = "¡Bienvenido a la Tienda Oficial de LunarMC!";
+            alert(mensajeBienvenida);
+        });
+
+        // 3. Fecha y hora en tiempo real con Date() y setInterval()
+        function actualizarFechaHora() {
+            let ahora = new Date();
+            let opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            let fechaTexto = ahora.toLocaleDateString('es-ES', opcionesFecha);
+            let horaTexto = ahora.toLocaleTimeString('es-ES');
+            
+            let contenedorFecha = document.getElementById('datetime-banner');
+            if (contenedorFecha) {
+                contenedorFecha.textContent = "Fecha: " + fechaTexto + " | Hora actual: " + horaTexto;
+            }
+        }
+        setInterval(actualizarFechaHora, 1000);
+        actualizarFechaHora();
+
+        // 2 & 7. Validación de formularios y Mostrar Resumen
+        let btnSubmit = document.getElementById('btn-submit-form');
+        let btnConfirm = document.getElementById('btn-confirm-send');
+
+        if (btnSubmit) {
+            btnSubmit.addEventListener('click', function() {
+                let username = document.getElementById('username-input').value.trim();
+                let email = document.getElementById('email-input').value.trim();
+                
+                let usernameError = document.getElementById('username-error');
+                let emailError = document.getElementById('email-error');
+                
+                let esValido = true;
+
+                // Limpiar errores previos
+                usernameError.textContent = "";
+                emailError.textContent = "";
+
+                // Validación de campo vacío
+                if (username === "") {
+                    usernameError.textContent = "El nombre de usuario no puede estar vacío.";
+                    esValido = false;
+                }
+
+                // Validación de formato de correo electrónico con RegEx
+                let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (email === "") {
+                    emailError.textContent = "El correo electrónico no puede estar vacío.";
+                    esValido = false;
+                } else if (!regexEmail.test(email)) {
+                    emailError.textContent = "Por favor, ingresa un correo electrónico válido.";
+                    esValido = false;
+                }
+
+                // Ejercicio 7: Mostrar resumen si es válido
+                if (esValido) {
+                    document.getElementById('summary-username').textContent = "Usuario: " + username;
+                    document.getElementById('summary-email').textContent = "Correo: " + email;
+                    document.getElementById('form-summary').style.display = "block";
+                }
+            });
+        }
+
+        if (btnConfirm) {
+            btnConfirm.addEventListener('click', function() {
+                alert("¡Formulario enviado con éxito!");
+                document.getElementById('form-summary').style.display = "none";
+                document.getElementById('user-form').reset();
+            });
+        }
+
+        // 4. Menús interactivos (Acordeón)
+        let accordionBtns = document.querySelectorAll('.accordion-btn');
+        accordionBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                let content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+
+        // 5. Galería de imágenes
+        let galleryImages = [
+            "imagen del servidor lunar.png",
+            "miniatura 2 .png",
+            "miniatura 3.png", 
+        ];
+        let currentImgIndex = 0;
+        let galleryDisplay = document.getElementById('gallery-display');
+        let btnPrev = document.getElementById('btn-prev-img');
+        let btnNext = document.getElementById('btn-next-img');
+        let thumbnails = document.querySelectorAll('.gallery-thumbnails .thumb');
+
+        function updateGallery(index) {
+            currentImgIndex = index;
+            galleryDisplay.src = galleryImages[currentImgIndex];
+        }
+
+        if (btnNext && btnPrev) {
+            btnNext.addEventListener('click', function() {
+                currentImgIndex = (currentImgIndex + 1) % galleryImages.length;
+                updateGallery(currentImgIndex);
+            });
+
+            btnPrev.addEventListener('click', function() {
+                currentImgIndex = (currentImgIndex - 1 + galleryImages.length) % galleryImages.length;
+                updateGallery(currentImgIndex);
+            });
+        }
+
+        thumbnails.forEach(function(thumb, idx) {
+            thumb.addEventListener('click', function() {
+                updateGallery(idx);
+            });
+        });
+
+        // 6. Cambiar el tema de la página (Inicia en Modo Oscuro)
+        let toggleThemeBtn = document.getElementById('toggle-theme-btn');
+        if (toggleThemeBtn) {
+            toggleThemeBtn.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                if (document.body.classList.contains('dark-mode')) {
+                    toggleThemeBtn.textContent = "☀️ Modo Claro";
+                } else {
+                    toggleThemeBtn.textContent = "🌙 Modo Oscuro";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

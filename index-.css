@@ -1,0 +1,495 @@
+/* ==========================================
+   1. ESTILOS GENERALES Y MODO CLARO (BASE BLANCO)
+   ========================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px 0;
+    color: #121212;                        /* Texto oscuro para legibilidad */
+    background-color: #ffffff;             /* Fondo totalmente blanco en modo claro */
+    text-align: center !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main, .main-container {
+    max-width: 1000px;
+    margin: 0 auto !important;
+    padding: 0 15px;
+    text-align: left;
+    background-color: transparent !important; /* Evita recuadros blancos globales */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #d1d5db;
+    margin: 20px 0;
+}
+
+code {
+    background-color: #e5e7eb;
+    color: #0d6efd;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* ==========================================
+   2. ENCABEZADO Y TABLAS
+   ========================================== */
+.header-table, table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto !important;
+    border-collapse: collapse;
+    border: 0;
+    background-color: #f8f9fa;
+    border-bottom: 3px solid #7289DA;
+}
+
+.col-spacer { width: 20%; }
+.col-main { width: 60%; text-align: center; }
+.col-register { width: 20%; text-align: right; vertical-align: top; padding-right: 15px; }
+
+.header-title, h1 {
+    color: #1a252f;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.clickable-ip {
+    cursor: pointer;
+    background-color: #e2e8f0;
+    color: #1e293b;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #b8860b;
+    margin: 5px auto;
+}
+
+.btn-register {
+    cursor: pointer;
+    padding: 10px 18px;
+    background-color: #ffd700;
+    color: #000000;
+    border: 2px solid #b8860b;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* ==========================================
+   3. HERO, SECCION PRINCIPAL Y DISCORD
+   ========================================== */
+#hero-server, .hero-container {
+    text-align: center !important;
+    margin: 0 auto 20px auto;
+    max-width: 1000px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+#hero-server img, img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border: 3px solid #7289DA;
+    border-radius: 10px;
+}
+
+#login-box, .login-container {
+    display: block;
+    text-align: center !important;
+    margin: 15px auto;
+}
+
+.login-details, details {
+    display: inline-block;
+    text-align: center;
+    background-color: #e5e7eb;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.login-inner-box {
+    border: 2px solid #0056b3;
+    background-color: #ffffff;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#discord-community {
+    background-color: #7289DA;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#discord-community a {
+    color: #ffff00 !important;
+    text-decoration: underline;
+}
+
+/* ==========================================
+   4. MENÚ DE NAVEGACIÓN
+   ========================================== */
+#main-nav, .nav-container, nav {
+    text-align: center !important;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    max-width: 1000px;
+    margin: 15px auto !important;
+    border: 1px solid #d1d5db;
+}
+
+#main-nav a, 
+.nav-container a, 
+.nav-link, 
+.nav-summary {
+    font-weight: bold;
+    color: #0056b3 !important;
+    text-decoration: underline;
+    margin: 0 10px;
+}
+
+#main-nav a:visited, 
+.nav-link:visited {
+    color: #0056b3 !important;
+}
+
+/* ==========================================
+   5. CONTENIDO, LISTAS Y RANGOS
+   ========================================== */
+.content-block, article, section.about-us, .about-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border-left: 4px solid #7289DA;
+    border-top: 1px solid #d1d5db;
+    border-right: 1px solid #d1d5db;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.content-block h2, h2 { color: #1a252f; margin-top: 0; }
+.content-block h3, h3 { color: #2c3e50; margin-top: 0; }
+
+article a, main a, section a {
+    color: #0056b3;
+}
+
+article a:visited, main a:visited, section a:visited {
+    color: #0056b3;
+}
+
+ul, ol {
+    display: inline-block !important;
+    text-align: left !important;
+    margin: 15px auto !important;
+}
+
+ul li, ol li {
+    color: inherit;
+}
+
+ul li a {
+    color: #0056b3 !important;
+    font-weight: bold;
+}
+
+#monthly-goal {
+    text-align: center !important;
+    border: 2px solid #ffa500;
+    background-color: #fff8e6;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 6px;
+    max-width: 1000px;
+}
+
+#monthly-goal p { color: #d97706; font-size: 18px; margin: 0; }
+
+/* ==========================================
+   6. PIE DE PÁGINA
+   ========================================== */
+footer, .main-footer {
+    text-align: center !important;
+    margin: 30px auto 0 auto !important;
+    max-width: 1000px;
+    background-color: #e9ecef !important;
+    color: #333333 !important;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+footer p { margin: 5px 0; }
+
+/* ==========================================
+   7. CENTRADO GLOBAL Y ELEMENTOS
+   ========================================== */
+h1, h2, h3, h4, p, section, article, div {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* ==========================================
+   8. COMPONENTES INTERACTIVOS (MODO CLARO)
+   ========================================== */
+
+#toggle-theme-btn {
+    cursor: pointer;
+    padding: 8px 12px;
+    background-color: #2D323F;
+    color: #F1C40F;
+    border: 1px solid #7289DA;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.datetime-banner {
+    text-align: center !important;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #e2e8f0;
+    color: #0056b3;
+    margin: 10px auto;
+    border-radius: 6px;
+    max-width: 1000px;
+    border: 1px solid #7289DA;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 0.85em;
+    margin-top: 4px;
+    display: block;
+    font-weight: bold;
+}
+
+.summary-box {
+    background-color: #ffffff;
+    border: 2px dashed #0056b3;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+#btn-submit-form, #btn-confirm-send {
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color: #7289DA;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.faq-section {
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.accordion-btn {
+    width: 100%;
+    text-align: left !important;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    color: #b8860b;
+    border: 1px solid #d1d5db;
+    font-weight: bold;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 12px;
+    border-left: 4px solid #0056b3;
+    margin-top: 5px;
+    background-color: #ffffff;
+    text-align: left !important;
+}
+
+.gallery-container {
+    text-align: center !important;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.gallery-main-img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #7289DA !important;
+    margin-bottom: 10px;
+}
+
+.gallery-controls button {
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color: #f8f9fa;
+    color: #0056b3;
+    border: 1px solid #7289DA;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.gallery-thumbnails {
+    margin-top: 10px;
+}
+
+.gallery-thumbnails img {
+    width: 70px !important;
+    height: 70px;
+    display: inline-block !important;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 2px solid #d1d5db !important;
+    object-fit: cover;
+    border-radius: 4px !important;
+}
+
+.gallery-thumbnails img:hover {
+    border-color: #0056b3 !important;
+}
+
+/* ==========================================
+   9. ESTILOS MODO OSCURO (ACTIVADO CON .dark-mode)
+   ========================================== */
+body.dark-mode {
+    background-color: rgb(18, 18, 20) !important;
+    color: #E1E1E6 !important;
+}
+
+body.dark-mode hr { background-color: #2D323F; }
+
+body.dark-mode code {
+    background-color: rgb(0, 0, 0);
+    color: #00ff00;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode .content-block h2,
+body.dark-mode article h2,
+body.dark-mode section h2 { color: #F1C40F !important; }
+
+body.dark-mode h3,
+body.dark-mode .content-block h3,
+body.dark-mode article h3,
+body.dark-mode section h3 { color: #7289DA !important; }
+
+/* Contenedores principales y de información institucional */
+body.dark-mode .header-table,
+body.dark-mode table,
+body.dark-mode #hero-server,
+body.dark-mode .hero-container,
+body.dark-mode #main-nav,
+body.dark-mode .nav-container,
+body.dark-mode nav,
+body.dark-mode .content-block,
+body.dark-mode article,
+body.dark-mode section,
+body.dark-mode .about-us,
+body.dark-mode .about-container {
+    background-color: #1A1D24 !important;
+    color: #E1E1E6 !important;
+    border-color: #2D323F !important;
+}
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode span {
+    color: #E1E1E6 !important;
+}
+
+body.dark-mode .clickable-ip {
+    background-color: rgb(40, 45, 55);
+    color: hsl(50, 100%, 75%);
+    border-color: #F1C40F;
+}
+
+body.dark-mode .login-details,
+body.dark-mode details {
+    background-color: #2D323F;
+}
+
+body.dark-mode .login-inner-box {
+    border-color: hsl(210, 80%, 50%);
+    background-color: #1A1D24;
+}
+
+body.dark-mode #main-nav a, 
+body.dark-mode .nav-container a, 
+body.dark-mode .nav-link, 
+body.dark-mode .nav-summary,
+body.dark-mode article a,
+body.dark-mode main a,
+body.dark-mode section a,
+body.dark-mode ul li a {
+    color: #00bfff !important;
+}
+
+body.dark-mode #monthly-goal {
+    background-color: rgb(35, 30, 20);
+}
+
+body.dark-mode #monthly-goal p { color: #ffa500; }
+
+body.dark-mode footer, 
+body.dark-mode .main-footer {
+    background-color: hsl(225, 14%, 6%) !important;
+    color: hsl(0, 0%, 70%) !important;
+}
+
+body.dark-mode .datetime-banner {
+    background-color: #2D323F;
+    color: #00bfff;
+}
+
+body.dark-mode .summary-box {
+    background-color: #1A1D24;
+    border-color: #00bfff;
+}
+
+body.dark-mode .accordion-btn {
+    background-color: #1A1D24;
+    color: #F1C40F;
+    border-color: #2D323F;
+}
+
+body.dark-mode .accordion-content {
+    background-color: #242834;
+    border-left-color: #00bfff;
+}
+
+body.dark-mode .gallery-controls button {
+    background-color: #1A1D24;
+    color: #00bfff;
+}
+
+body.dark-mode .gallery-thumbnails img {
+    border-color: #2D323F !important;
+}
+
+body.dark-mode .gallery-thumbnails img:hover {
+    border-color: #00bfff !important;
+}
